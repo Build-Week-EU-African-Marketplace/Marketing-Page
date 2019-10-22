@@ -146,8 +146,25 @@ body {
   color: white;
 }
 .container {
-  margin: 0 auto;
+  margin: 35px auto;
   width: 80%;
+}
+.container header {
+  background: black;
+}
+.container header nav {
+  padding: 15px 2%;
+  margin-top: -31px;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.container header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8%;
+  text-transform: uppercase;
 }
 .container .main {
   margin-top: 35px;

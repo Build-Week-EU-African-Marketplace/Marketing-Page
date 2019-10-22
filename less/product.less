@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 // variables
-@background1:black;
+@background1: black;
 @color1: white;
 @margin: 35px;
 @uppercase: uppercase;
@@ -79,8 +79,29 @@ html, body {
 }
 
 .container{
-    margin: 0 auto;
-	width: 80%;
+    margin: @margin auto;
+    width: 80%;
+    header {
+    
+        background: @background1;
+        
+        nav {
+          padding: 15px 2%;
+        
+        margin-top: -1* (@margin - 4px);
+        margin-right: 3%;
+        
+        .flexMixin();
+        justify-content: flex-end;
+        }
+        nav a {
+          text-decoration: none;
+          color: white;
+          margin-right: 8%;
+          .capitalized();
+          
+        }
+       }
 
     .main{
          margin-top: @margin; 

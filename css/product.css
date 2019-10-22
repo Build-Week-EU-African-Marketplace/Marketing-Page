@@ -2,11 +2,18 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.capitalized {
+  text-transform: uppercase;
+}
 .centered {
   text-align: center;
 }
 .spacing {
   margin-top: 35px;
+}
+.flexMixin {
+  display: flex;
+  justify-content: space-between;
 }
 html,
 body,
@@ -156,11 +163,49 @@ body {
   text-align: center;
   padding-top: 15px;
 }
-.container .main .product-images .product-image {
-  height: 105px;
+.container .main .product-images {
+  margin-left: 16%;
+  margin-right: 16%;
 }
-.container .main .product-images .product-image .african-image {
-  height: 220 ;
-  width: 220;
+.container .main .product-images .top,
+.container .main .product-images .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.container .main .product-images .top .product-image,
+.container .main .product-images .bottom .product-image {
+  height: 280px;
+}
+.container .main .product-images .top .product-image h3,
+.container .main .product-images .bottom .product-image h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+.container .main .product-images .top .product-image .african-image,
+.container .main .product-images .bottom .product-image .african-image {
   border-radius: 50%;
+}
+.container .main .product-images .middle {
+  margin: auto;
+}
+.container .main .product-images .middle .product-image {
+  height: 280px;
+}
+.container .main .product-images .middle .product-image h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+.container .main .product-images .middle .product-image .african-image {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container footer p {
+  text-align: center;
+  padding-bottom: 15px;
 }

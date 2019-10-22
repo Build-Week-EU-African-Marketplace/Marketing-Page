@@ -6,11 +6,20 @@
 @background1:black;
 @color1: white;
 @margin: 35px;
+@uppercase: uppercase;
+.capitalized{
+    text-transform: @uppercase;
+}
 .centered{
     text-align: center;
 }
 .spacing{
     margin-top: @margin;
+}
+.flexMixin{
+    display: flex;
+    justify-content: space-between;
+    
 }
 //mixins
 
@@ -78,7 +87,7 @@ html, body {
       .product-intro{
           margin-bottom: @margin;
           h1{
-              text-transform: uppercase;
+              .capitalized();
               .centered(); 
           }
           p{
@@ -88,14 +97,52 @@ html, body {
           }
       }  
       .product-images{
-          .product-image{
-              height: @margin * 3; 
-              .african-image{
-                  height: 220 ;
-                  width:220;
-                border-radius: 50%;  
-              }
-          }
+        //   margin: auto;
+          margin-left: 16%;
+          margin-right: 16%; 
+         .top, .bottom{
+             .flexMixin();
+             padding-top: 7%;
+             padding-bottom: 7%;
+            .product-image{
+                
+                height: @margin * 8; 
+                h3{
+                    .capitalized();
+                    .centered();
+                    padding-top: @margin - 20px;                
+                }
+                .african-image{
+                    border-radius: 50%;                    
+                }
+            }
+         }
+        .middle{
+            margin: auto;
+            .product-image{
+                
+                height: @margin * 8; 
+                h3{
+                    .capitalized();
+                    .centered();
+                    padding-top: @margin - 20px; 
+                }
+                .african-image{
+                    border-radius: 50%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+              
+                }
+            }
+        }
+          
       }
+    }
+    footer{
+        p{
+            .centered;
+            padding-bottom: @margin - 20px;
+        }
     }
 }

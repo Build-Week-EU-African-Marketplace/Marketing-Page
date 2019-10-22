@@ -152,6 +152,9 @@ body {
 .container header {
   background: black;
 }
+.container header .logo {
+  margin-left: 10%;
+}
 .container header nav {
   padding: 15px 2%;
   margin-top: -31px;
@@ -170,19 +173,51 @@ body {
   margin-top: 35px;
 }
 .container .main .product-intro {
-  margin-bottom: 35px;
+  box-shadow: 3px 3px #5b0909, -0.5em -0.5em 0.4em #5b0909;
+  margin-bottom: 45px;
+  margin-left: 16%;
+  margin-right: 16%;
+  background-color: #2c1414;
+}
+.container .main .product-intro p {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 35px;
+  padding-top: -20px;
 }
 .container .main .product-intro h1 {
   text-transform: uppercase;
   text-align: center;
+  padding-top: 35px;
+  margin-bottom: 35px -10px;
+  padding-bottom: 35px -20px;
 }
-.container .main .product-intro p {
-  text-align: center;
+.container .main .product-intro .content {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .product-intro .content .widthValue {
+  width: 45%;
+  padding-bottom: 35px -20px;
+}
+.container .main .product-intro .content .widthValue p {
   padding-top: 15px;
 }
+.container .main .product-intro .content .sokoni {
+  height: 200px;
+  width: 80%;
+}
 .container .main .product-images {
-  margin-left: 16%;
-  margin-right: 16%;
+  box-shadow: 3px 3px #5b0909, -1em -1em 0.4em #5b0909;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.container .main .product-images h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 .container .main .product-images .top,
 .container .main .product-images .bottom {
@@ -190,6 +225,8 @@ body {
   justify-content: space-between;
   padding-top: 7%;
   padding-bottom: 7%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 .container .main .product-images .top .product-image,
 .container .main .product-images .bottom .product-image {
@@ -224,5 +261,6 @@ body {
 }
 .container footer p {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
+  padding-top: 27px;
 }

@@ -4,7 +4,9 @@
 */
 // variables
 @background1: black;
+@background2: #2c1414;
 @color1: white;
+@color2: #5b0909;
 @margin: 35px;
 @uppercase: uppercase;
 .capitalized{
@@ -84,6 +86,9 @@ html, body {
     header {
     
         background: @background1;
+        .logo{
+            margin-left: 10%;
+        }
         
         nav {
           padding: 15px 2%;
@@ -104,27 +109,65 @@ html, body {
        }
 
     .main{
-         margin-top: @margin; 
+         margin-top: @margin;
+        //  background-color: @background2; 
       .product-intro{
-          margin-bottom: @margin;
+        box-shadow: 3px 3px @color2, -0.5em -0.5em .4em @color2;
+          margin-bottom: @margin + 10px;
+          margin-left: 16%;
+          margin-right: 16%; 
+          background-color: @background2;
+          p{
+              padding-right: 10%;
+              padding-left: 10%;
+              padding-bottom: @margin;
+              padding-top: -20px;
+          }
+          
+          
           h1{
               .capitalized();
               .centered(); 
+              padding-top: @margin;
+              margin-bottom: @margin -10px;
+              padding-bottom: @margin -20px;
           }
-          p{
-              .centered();
-              padding-top: @margin - 20px;
-            //   padding-bottom: @margin - 20px;
+          .content{
+           
+            margin-left: 10%;
+            margin-right: 10%;
+             .flexMixin();
+             .widthValue{
+                width: 45%;
+                padding-bottom: @margin -20px;
+                p{
+                    padding-top: @margin - 20px;
+                  //   padding-bottom: @margin - 20px;
+                }
+            }
+            .sokoni{
+                height: 200px;
+                width: 80%;
+            }
+            
           }
+          
       }  
       .product-images{
-        //   margin: auto;
-          margin-left: 16%;
-          margin-right: 16%; 
+        box-shadow: 3px 3px @color2, -1em -1em .4em @color2;
+          margin-left: 14%;
+          margin-right: 14%; 
+          h2{
+              .centered();
+              .capitalized();
+              padding-top: @margin + 15px;
+          }
          .top, .bottom{
              .flexMixin();
              padding-top: 7%;
              padding-bottom: 7%;
+             padding-right: 4%;
+             padding-left: 4%;
             .product-image{
                 
                 height: @margin * 8; 
@@ -163,7 +206,8 @@ html, body {
     footer{
         p{
             .centered;
-            padding-bottom: @margin - 20px;
+            padding-bottom: @margin - 26px;
+            padding-top: @margin - 8px;
         }
     }
 }

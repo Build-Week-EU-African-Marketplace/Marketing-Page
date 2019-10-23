@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  background: #272121;
+  height: 50px;
+  justify-content: flex-end;
+}
+header nav {
+  padding: 15px 2%;
+  font-size: 50px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+.intro h2 {
+  padding: 15px;
+}
+.intro p {
+  padding: 0 15px;
+}
+.eu-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.eu-images img {
+  max-width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.outro {
+  margin-top: 60px;
+  border-top: 1px solid #2c1414;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #2c1414;
+}
+.outro .text {
+  width: 50%;
+  color: white;
+}
+.outro h2 {
+  margin-bottom: 10px;
+}
+.outro p {
+  margin-bottom: 26px;
+}
+.text-img {
+  width: 35%;
+  margin-left: 4%;
+}
+.text-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #272121;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 3.2rem;
+  color: white;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #272121;
+}

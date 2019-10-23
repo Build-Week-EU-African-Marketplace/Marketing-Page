@@ -1,0 +1,245 @@
+.capitalized {
+  text-transform: uppercase;
+}
+.centered {
+  text-align: center;
+}
+.spacing {
+  margin-top: 35px;
+}
+.flexMixin {
+  display: flex;
+  justify-content: space-between;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.container {
+  margin: 35px auto;
+  width: 80%;
+}
+.container header {
+  background: black;
+}
+.container header .logo {
+  margin-left: 10%;
+}
+.container header nav {
+  padding: 15px 2%;
+  margin-top: -31px;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.container header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8%;
+  text-transform: uppercase;
+}
+.container .main .team-intro .team-image img {
+  height: 300px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container .main .team-intro h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.container .main .developers {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container .main .developers h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32 px;
+  margin-bottom: 27px;
+}
+.container .main .developers .top,
+.container .main .developers .middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.container .main .developers .top .market-page,
+.container .main .developers .middle .market-page,
+.container .main .developers .top .front-end,
+.container .main .developers .middle .front-end,
+.container .main .developers .top .team-lead,
+.container .main .developers .middle .team-lead {
+  width: 42%;
+}
+.container .main .developers .top .market-page img,
+.container .main .developers .middle .market-page img,
+.container .main .developers .top .front-end img,
+.container .main .developers .middle .front-end img,
+.container .main .developers .top .team-lead img,
+.container .main .developers .middle .team-lead img {
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 16%;
+}
+.container .main .developers .top .market-page h3,
+.container .main .developers .middle .market-page h3,
+.container .main .developers .top .front-end h3,
+.container .main .developers .middle .front-end h3,
+.container .main .developers .top .team-lead h3,
+.container .main .developers .middle .team-lead h3 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container .main .developers .bottom {
+  margin-bottom: 35px;
+}
+.container .main .developers .bottom .team-lead img {
+  display: block;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .main .developers .bottom .team-lead h3 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.container footer p {
+  text-align: center;
+  padding-bottom: 9px;
+  padding-top: 27px;
+}

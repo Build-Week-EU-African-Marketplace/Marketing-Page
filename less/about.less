@@ -1,0 +1,176 @@
+@background1: black;
+@background2: #2c1414;
+@color1: white;
+@color2: #5b0909;
+@margin: 35px;
+@uppercase: uppercase;
+.capitalized{
+    text-transform: @uppercase;
+}
+.centered{
+    text-align: center;
+}
+.spacing{
+    margin-top: @margin;
+}
+.flexMixin{
+    display: flex;
+    justify-content: space-between;
+    
+}
+//mixins
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+// ol, ul {
+// 	list-style: none;
+// }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: @background1;
+    color: @color1;
+    font-size: 18px;
+}
+.container{
+    margin: @margin auto;
+    width: 80%;
+    header {
+    
+        background: @background1;
+        .logo{
+            margin-left: 10%;
+        }
+        
+        nav {
+          padding: 15px 2%;
+        
+        margin-top: -1* (@margin - 4px);
+        margin-right: 3%;
+        
+        .flexMixin();
+        justify-content: flex-end;
+        }
+        nav a {
+          text-decoration: none;
+          color: white;
+          margin-right: 8%;
+          .capitalized();
+          
+        }
+       }
+       .main{
+         .team-intro{
+            .team-image{
+                img{
+                    height: 300px;
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
+            }
+            h1{
+                .centered();
+                .capitalized();
+                font-size: 32px;
+                margin-top: @margin;
+                margin-bottom: @margin;
+            }
+        }
+        .developers{
+            margin-left: 10%;
+            margin-right: 10%;
+            h2{
+                .centered();
+                .capitalized();
+                font-size: 32 px;
+                margin-bottom: @margin - 8px;
+            }
+            .top, .middle{
+                .flexMixin();
+                margin-bottom: @margin;
+                .market-page, .front-end, .team-lead{
+                    width: 42%;
+                    img{
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-left: 16%;
+                    }
+                    h3{
+                        .centered();
+                        padding-top: @margin - 30px;
+                        padding-bottom: @margin - 30px;
+                    }
+                }
+            }
+            .bottom{
+                margin-bottom: @margin;
+                .team-lead{
+                    img{
+                        display: block;
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                    h3{
+                        .centered();
+                        padding-top: @margin - 30px;
+                        padding-bottom: @margin - 30px;
+                    }
+                }
+            }
+        }
+       }
+       footer{
+        p{
+            .centered;
+            padding-bottom: @margin - 26px;
+            padding-top: @margin - 8px;
+        }
+    }
+}

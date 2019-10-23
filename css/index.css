@@ -4,6 +4,13 @@ header {
   height: 50px;
   justify-content: flex-end;
 }
+@media (max-width: 515px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+  }
+}
 header nav {
   padding: 15px 2%;
   font-size: 50px;
@@ -20,14 +27,12 @@ header nav a {
 }
 .eu-images {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
+  align-items: flex-end;
 }
 .eu-images img {
-  max-width: 28%;
+  max-width: 80%;
   margin: 20px 2.5%;
-  border-radius: 20px;
   height: 100%;
 }
 .outro {
@@ -89,4 +94,8 @@ p {
   width: 100%;
   margin: 0 auto;
   background-color: #272121;
+}
+.logo {
+  max-width: 200px;
+  padding: 10px 0px 0px 20px;
 }

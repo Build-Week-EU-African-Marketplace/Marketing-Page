@@ -1,0 +1,107 @@
+.about{
+    .main{
+        
+         .team-intro{
+                        
+            .team-image{
+                img{
+                    height: 300px;
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    @media @mobile{
+                        display: none;
+                    }
+                }
+            }
+            h1{
+                .centered();
+                .capitalized();
+                font-size: 32px;
+                margin-top: @margin;
+                margin-bottom: @margin;
+                @media @mobile{
+                    margin-top : @margin - 15px;
+                }
+            }
+            
+        }
+        .developers{
+            box-shadow: 3px 3px @color2, -1em -1em .4em @color2;
+            margin-left: 10%;
+            margin-right: 10%;
+            h2{
+                .centered();
+                .capitalized();
+                font-size: 32 px;
+                margin-bottom: @margin - 8px;
+                padding-top: 20px;
+            }
+            .top, .middle{
+                .flexMixin();
+                margin-bottom: @margin;
+                @media @mobile{
+                    display: block;
+                }
+                .market-page, .front-end{
+                    width: 42%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                   
+                    @media @mobile{
+                        width: 100%;
+                        padding-bottom: @margin -25px;              
+                    }
+                    img{
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-left: 16%;
+                        @media @mobile{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                            
+                        }
+                    }
+                    h3{
+                        .centered();
+                        padding-top: @margin - 30px;
+                        padding-bottom: @margin - 30px;
+                    }
+                    p{
+                        .centered();
+                        @media @mobile{
+                            padding-bottom: @margin -20px;
+                        }
+                    }
+                }
+            }
+            .bottom{
+                margin-bottom: @margin;
+                @media @mobile{
+                    padding-bottom: 15px;
+                    margin-bottom: 0;
+                }
+                .team-lead{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 20px;
+                    img{
+                        display: block;
+                        height: 160px;
+                        border-radius: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        
+                    }
+                    h3{
+                        .centered();
+                        padding-top: @margin - 30px;
+                        padding-bottom: @margin - 30px;
+                       
+                    }
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.capitalized {
+  text-transform: uppercase;
+}
+.centered {
+  text-align: center;
+}
+.spacing {
+  margin-top: 35px;
+}
+.flexMixin {
+  display: flex;
+  justify-content: space-between;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+.container {
+  margin: 35px auto;
+  width: 80%;
+}
+.container header {
+  background: black;
+}
+.container header .logo {
+  margin-left: 10%;
+}
+.container header nav {
+  padding: 15px 2%;
+  margin-top: -31px;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.container header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8%;
+  text-transform: uppercase;
+}
+.container .main {
+  margin-top: 35px;
+}
+.container .main .product-intro {
+  box-shadow: 3px 3px #5b0909, -0.5em -0.5em 0.4em #5b0909;
+  margin-bottom: 45px;
+  margin-left: 16%;
+  margin-right: 16%;
+  background-color: #2c1414;
+}
+.container .main .product-intro p {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 35px;
+  padding-top: -20px;
+}
+.container .main .product-intro h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 35px;
+  margin-bottom: 35px -10px;
+  padding-bottom: 35px -20px;
+}
+.container .main .product-intro .content {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .product-intro .content .widthValue {
+  width: 45%;
+  padding-bottom: 35px -20px;
+}
+.container .main .product-intro .content .widthValue p {
+  padding-top: 15px;
+}
+.container .main .product-intro .content .sokoni {
+  height: 200px;
+  width: 80%;
+}
+.container .main .product-images {
+  box-shadow: 3px 3px #5b0909, -1em -1em 0.4em #5b0909;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.container .main .product-images h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.container .main .product-images .top,
+.container .main .product-images .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+.container .main .product-images .top .product-image,
+.container .main .product-images .bottom .product-image {
+  height: 280px;
+}
+.container .main .product-images .top .product-image h3,
+.container .main .product-images .bottom .product-image h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+.container .main .product-images .top .product-image .african-image,
+.container .main .product-images .bottom .product-image .african-image {
+  border-radius: 50%;
+}
+.container .main .product-images .middle {
+  margin: auto;
+}
+.container .main .product-images .middle .product-image {
+  height: 280px;
+}
+.container .main .product-images .middle .product-image h3 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+.container .main .product-images .middle .product-image .african-image {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container footer p {
+  text-align: center;
+  padding-bottom: 9px;
+  padding-top: 27px;
+}

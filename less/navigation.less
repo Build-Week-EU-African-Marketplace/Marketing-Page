@@ -1,0 +1,46 @@
+header {
+    
+  background: @background1;
+
+  @media @mobile{
+      background: @color1;
+      border-bottom: 1px @color2 solid;
+  }
+  .logo{
+      margin-left: 10%;
+      @media @mobile{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: @margin;
+          
+      }
+  }
+  
+  nav {
+    padding: 15px 2%;
+  
+  margin-top: -1* (@margin - 4px);
+  margin-right: 3%;
+         
+  .flexMixin();
+  justify-content: flex-end;
+  @media @mobile{
+      margin: 0 40% 0 40%;
+      display: block;
+     }
+    a {
+      text-decoration: none;
+      color: white;
+      .capitalized();
+      margin-right: 8%;
+      @media @mobile{
+          color: black;
+          margin-right: 45% + 30px;
+          padding-bottom: @margin;
+         
+      }
+  }
+
+  }
+ }

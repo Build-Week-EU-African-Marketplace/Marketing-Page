@@ -9,14 +9,20 @@
 
 .eu-images {
   display: flex;
-
   justify-content: center;
   align-items: flex-end;
+
+  @media @phone {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    padding: 0px 0px 0px 200px;
+  }
 
   img {
     max-width: 80%;
     margin: 20px 2.5%;
-
     height: 100%;
   }
 }
@@ -27,13 +33,15 @@
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  // background-color: @sokoni;
+  background-color: @sokoni;
 
   @media @phone {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin-left: 0;
     background-color: white;
+    // flex-wrap: nowrap;
+    // align-items: flex-start;
   }
 
   .text {
@@ -42,7 +50,7 @@
 
     @media @phone {
       color: black;
-      display: flex;
+      // display: flex;
       flex-direction: column-reverse;
     }
   }

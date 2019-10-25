@@ -1,48 +1,23 @@
+
 * {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+html, body {
+  height: 100%;
+  background-color: @background1;
+  color: @color1;
+  font-size: 18px;
+ @media @mobile{
+  background: white;
+  color: @background1;
+ }
 }
-
-html,
-body {
-  font-family: "Ubuntu", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-  color: white;
-}
-
-h2 {
-  font-size: 3.2rem;
-  color: white;
-}
-
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: @dark;
-
-  @media @phone {
-    background-color: white;
-  }
-}
-
-.logo {
-  max-width: 200px;
-  // border: 0px 0px 0px 20px;
-  padding: 10px 0px 0px 20px;
+.container{
+  margin: @margin auto;
+    width: 80%;
+    @media @mobile{
+        margin: 0 0 0 0;
+        width: 100%;
+    }
 }

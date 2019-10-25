@@ -1,36 +1,46 @@
 header {
-  display: flex;
-  background: @dark;
-  height: 50px;
-  justify-content: flex-end;
+    
+  background: @background1;
 
-  @media @phone {
-    // display: flex;
-    // flex-direction: row;
-    // margin-left: 0;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  @media @mobile{
+      background: @color1;
+      border-bottom: 1px @color2 solid;
   }
-
+  .logo{
+      margin-left: 10%;
+      @media @mobile{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: @margin;
+          
+      }
+  }
+  
   nav {
     padding: 15px 2%;
-    font-size: 50px;
-
-    @media @phone {
-      background-color: white;
-    }
+  
+  margin-top: -1* (@margin - 4px);
+  margin-right: 3%;
+         
+  .flexMixin();
+  justify-content: flex-end;
+  @media @mobile{
+      margin: 0 40% 0 40%;
+      display: block;
+     }
+    a {
+      text-decoration: none;
+      color: white;
+      .capitalized();
+      margin-right: 8%;
+      @media @mobile{
+          color: black;
+          margin-right: 45% + 30px;
+          padding-bottom: @margin;
+         
+      }
   }
 
-  nav a {
-    text-decoration: none;
-    color: white;
-
-    @media @phone {
-      color: black;
-      font-size: 30px;
-      // display: flex;
-    }
   }
-}
+ }

@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  background: @dark;
+  height: 50px;
+  justify-content: flex-end;
+
+  @media @phone {
+    background-color: white;
+    display: flex;
+    // justify-content: center;
+    // flex-direction: row;
+  }
+
+  nav {
+    padding: 15px 2%;
+    font-size: 50px;
+
+    @media @phone {
+      background-color: white;
+    }
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+
+    @media @phone {
+      color: black;
+      font-size: 30px;
+    }
+  }
+}
